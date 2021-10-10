@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("../partials/head.ejs") %>
+
+  <body>
+    <%- include("../partials/header.ejs") %>
+
+    <main>
+      <div>
+        <article>
+          <h2>
+            <%= blog.name %> - <%= blog.public ? "Public" : "Not Public" %>
+          </h2>
+          <h3><%= blog.text %></h3>
+          <a href="/blogs/<%= blog._id %>/edit"><button>Edit</button></a>
+          <form action="/blogs/<%= blog._id %>?_method=DELETE " method="post">
+            <input type="submit" value="Delete" />
+          </form>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("../partials/head.ejs") %>
+
+  <body>
+    <%- include("../partials/header.ejs") %>
+    <main>
+      <div>
+        <form action="/blogs/<%= blog._id %>?_method=PUT" method="post">
+          <fieldset>
+            <legend>Edit a <%= blog.name %></legend>
+            <label>
+              BLOG NAME:<input
+                type="text"
+                name="name"
+                value="<%= blog.name %>"
+                placeholder="enter blog name"
+              />
+            </label>
+            <label>
+              BLOG:<input
+                type="text"
+                name="name"
+                value="<%= blog.text %>"
+                placeholder="write blog here"
+              />
+            </label>
+            <label>
+              PUBLIC:<input type="checkbox" name="public" <%=
+              blog.public ? "checked" : "" %> />
+            </label>
+          </fieldset>
+          <input type="submit" value="Update <%= blog.name %>" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

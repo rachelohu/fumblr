@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("../partials/head.ejs") %>
+
+  <body>
+    <%- include("../partials/header.ejs") %>
+    <main>
+      <div>
+        <form action="/blogs" method="post">
+          <fieldset>
+              <legend>Create a New Blog</legend>
+            <label>
+              BLOG NAME:<input
+                type="text"
+                name="name"
+                placeholder="enter blog name"
+              />
+            </label>
+            <label>
+              BLOG:<input
+                type="text"
+                name="name"
+                placeholder="write blog here"
+              />
+            </label>
+            <label>
+              PUBLIC:<input type="checkbox" name="public" />
+            </label>
+          </fieldset>
+          <input type="submit" value="create new blog" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
