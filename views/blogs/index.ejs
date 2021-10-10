@@ -1,32 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<%- include("../partials/head.ejs") %>
-
-<body>
-    <%- include("../partials/header.ejs") %>
-    
-    <main>
-
-        <div>
-
-            <a href="/blogs/new"><button>Create a new blog</button></a>
-            <a href="/user/logout"><button>Logout</button></a>
-
-            <% for (blog of blogs) { %>
-            
-            <article>
-                <a href="/blogs/<%= blog._id %>">
-                <h2>
-                    <%= blog.name %> - <%= blog.public %>
-                </h2>
-                </a>
-            </article>
-            
-            <% } %>
+    <%- include("../partials/head.ejs") %>
+    <body>
+        <%- include("../partials/header.ejs") %>   
+        <main>
+            <div>
+                <a href="/blogs/new"><button>Create a new blog</button></a>
+                <% for (blog of blogs) { %>
+                <article>
+                    <a href="/blogs/<%= blog._id %>">
+                    <h2>
+                        <%= blog.name %> is <%= blog.public %>
+                    </h2>
+                    </a>
+                </article>
+                <% } %>
+            <br> <a href="/user/logout"><button>Log out</button></a>
         </div>
     </main>
-
-
 </body>
 </html>

@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <%- include("../partials/head.ejs") %>
-
   <body>
     <%- include("../partials/header.ejs") %>
-
     <main>
       <div>
         <article>
           <h2>
-            <%= blog.name %> - <%= blog.public ? "Public" : "Not Public" %>
+            <%= blog.name %> is <%= blog.public ? "Public" : "Not Public" %>
           </h2>
           <h3><%= blog.text %></h3>
           <a href="/blogs/<%= blog._id %>/edit"><button>Edit</button></a>
