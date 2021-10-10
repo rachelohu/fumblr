@@ -27,11 +27,11 @@ router.get("/blogs/seed", (req, res) => {
 
     // array of starter blogs
     const startBlogs = [
-        { name: "About Me", text: "text", public: false },
-        { name: "Travels", text: "text", public: false },
-        { name: "Eats", text: "text", public: false },
-        { name: "Candid", text: "text", public: false },
-        { name: "Fun", text: "text", public: false },
+        { name: "About Me", text: "Hi", public: false },
+        { name: "Travels", text: "Asia", public: false },
+        { name: "Eats", text: "Korean Food", public: false },
+        { name: "Candid", text: "Smile", public: false },
+        { name: "Fun", text: "Gaming", public: false },
       ]
   
     // Delete all blogs

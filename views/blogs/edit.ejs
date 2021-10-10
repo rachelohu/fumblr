@@ -10,7 +10,7 @@
           <fieldset>
             <legend>Edit a <%= blog.name %></legend>
             <label>
-              BLOG NAME:<input
+              BLOG TITLE:<input
                 type="text"
                 name="name"
                 value="<%= blog.name %>"
@@ -18,12 +18,12 @@
               />
             </label>
             <label>
-              BLOG:<input
+              BLOG:<textarea
                 type="text"
                 name="name"
                 value="<%= blog.text %>"
                 placeholder="write blog here"
-              />
+              ></textarea>
             </label>
             <label>
               PUBLIC:<input type="checkbox" name="public" <%=
