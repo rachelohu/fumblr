@@ -11,10 +11,11 @@ Used:
 HTML
 CSS
 JavaScript
+jQuery
 Mongoose
 MongoDB
-Express
-EJS
+Express.js
+Node.js
 Github
 Heroku
 
