@@ -1,22 +1,24 @@
 # fumblr
 Personal Blog by Rachel Hu
 
+Personal Blog by Rachel Hu
+
 Features:
 Authentication for users to log in and out
 Sign up for visitors
 Edit, delete, and post blogs
 Simple and easy to use
 
-Languages:
+Used:
 HTML
-JavaScript
 CSS
-
-Database:
+JavaScript
+Mongoose
 MongoDB
-
-Service:
-Normalize CSS
+Express
+EJS
+Github
+Heroku
 
 Wireframes:
 ![Wireframes](https://user-images.githubusercontent.com/23408915/136710251-9deffce9-e77f-4cba-8c80-1dcf89a539cf.png)
