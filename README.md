@@ -1,8 +1,6 @@
 # fumblr
 Personal Blog by Rachel Hu
 
-Personal Blog by Rachel Hu
-
 Features:
 Authentication for users to log in and out
 Sign up for visitors
